@@ -1,6 +1,6 @@
 {
   "name": "@sveltia/cms-additions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Server-side additions to Sveltia CMS: user management, roles, commits without a Git account, and entry locking.",
   "keywords": [
     "sveltia",
