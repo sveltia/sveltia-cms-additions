@@ -1,0 +1,59 @@
+version: '0.2'
+language: en
+files:
+  - '**/.*'
+  - '**/*.{js,json,jsonc,md,yaml,yml}'
+useGitignore: true
+gitignoreRoot: .
+ignorePaths:
+  - docs/kdf-test-vectors.json
+  - .git
+  - pnpm-lock.yaml
+  - LICENSE.txt
+words:
+  - AUTOINCREMENT
+  - behaviour
+  - ciphertext
+  - ciphertexts
+  - Decap
+  - decaporg
+  - deepl
+  - edov
+  - esbuild
+  - exfiltration
+  - Forgejo
+  - Gitea
+  - HKDF
+  - hollesse
+  - hostnames
+  - hubot
+  - introspector
+  - jannikmenzel
+  - Kohei
+  - kyoshino
+  - Kysely
+  - libsql
+  - licence
+  - maikunari
+  - mimecine
+  - miniflare
+  - nodejs
+  - octocat
+  - passwordless
+  - pkce
+  - preflights
+  - prefs
+  - prehash
+  - prehashes
+  - refetched
+  - subsec
+  - Supabase
+  - sveltia
+  - Turso
+  - unixepoch
+  - unrs
+  - unstub
+  - upserts
+  - workerd
+  - wwwxexample
+  - Yoshino

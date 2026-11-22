@@ -1,0 +1,17 @@
+allowBuilds:
+  esbuild: true
+  unrs-resolver: false
+  workerd: true
+
+auditConfig:
+  ignoreGhsas:
+    # braces, used only by ESLint through eslint-config-airbnb-extended
+    # https://github.com/advisories/GHSA-vfj7-8cjw-p6xm
+    - GHSA-vfj7-8cjw-p6xm
+
+engineStrict: true
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - '@sveltia/*'

@@ -1,0 +1,68 @@
+{
+  "name": "@sveltia/cms-additions",
+  "version": "1.0.0",
+  "description": "Server-side additions to Sveltia CMS: user management, roles, commits without a Git account, and entry locking.",
+  "keywords": [
+    "sveltia",
+    "cms",
+    "cloudflare-workers"
+  ],
+  "homepage": "https://github.com/sveltia/sveltia-cms-additions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sveltia/sveltia-cms-additions.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Kohei Yoshino",
+    "url": "https://github.com/kyoshino"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./cloudflare": "./lib/platforms/cloudflare/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "migrations",
+    "!**/*.test.js",
+    "!lib/test",
+    "!lib/platforms/memory"
+  ],
+  "scripts": {
+    "check": "pnpm run --no-bail '/^check:.*/'",
+    "check:audit": "pnpm audit --ignore-registry-errors",
+    "check:cspell": "cspell --no-progress",
+    "check:eslint": "eslint .",
+    "check:prettier": "prettier --check .",
+    "dev": "wrangler dev",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "better-auth": "1.7.27",
+    "hono": "^4.13.19",
+    "kysely": "0.29.9"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.9.0",
+    "@stylistic/eslint-plugin": "^6.0.1",
+    "cspell": "^10.5.2",
+    "eslint": "^9.39.5",
+    "eslint-config-airbnb-extended": "^3.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsdoc": "^65.5.1",
+    "eslint-plugin-package-json": "^1.14.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^17.14.0",
+    "prettier": "^3.10.1",
+    "vitest": "^5.1.1",
+    "wrangler": "4.166.0"
+  },
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "node": ">=26"
+  }
+}

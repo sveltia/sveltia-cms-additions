@@ -1,0 +1,15 @@
+// Configuration for local development and tests. Deployments use the wrapper in
+// `templates/cloudflare/`, which has its own configuration with the same bindings.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sveltia-cms-additions-dev",
+  "main": "lib/platforms/cloudflare/index.js",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "minify": true,
+  "preview_urls": false,
+  "durable_objects": {
+    "bindings": [{ "name": "DURABLE_OBJECT", "class_name": "AdditionsDurableObject" }],
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["AdditionsDurableObject"] }],
+}

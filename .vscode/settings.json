@@ -1,0 +1,31 @@
+{
+  "editor.codeActionsOnSave": {
+    // We cannot use `source.organizeImports` because it conflicts with ESLint’s import sorting
+    "source.formatDocument": "explicit",
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "js/ts.preferences.importModuleSpecifier": "relative",
+  "js/ts.validate.enabled": true,
+  "eslint.validate": ["javascript"],
+  "eslint.codeActionsOnSave.mode": "all",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "yaml.schemas": {
+    "https://www.schemastore.org/github-issue-config.json": "/.github/ISSUE_TEMPLATE/config.yml"
+  }
+}

@@ -1,0 +1,4 @@
+# Local development only. Copy this file to `.dev.vars`, which Git ignores, and set a throwaway value
+# generated with `openssl rand -base64 32`. Never use the secret of a deployed site here: that one
+# lives in a password manager and in the Worker’s settings only.
+ADMIN_SECRET=
